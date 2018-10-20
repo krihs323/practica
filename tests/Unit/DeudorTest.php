@@ -88,11 +88,12 @@ class DeudorTest extends TestCase
     }
 
 
+
     public function testMetodoGuardarRetorna200DespuesDeCrear(){
       $datos = [
           '_method'=>'POST',
           '_token'=>config('app.test_token', 'modo_test_token'),
-          'nombre_apellido' => 'CRISTIAN BOTINA',
+          'nombre_apellido' => 'CRISTIAN BOTINA c',
           'documento' => '1143826302',
           'telefono' => '3124567895',
           'correo' => 'krihs323@gmail.com',
