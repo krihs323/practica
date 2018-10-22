@@ -1,12 +1,9 @@
 @extends('layouts.app')
-
-
 @section('content')
 <div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
-
               <div class="panel-body">
                 @if(Session::has('message'))
                   <div class="alert alert-success alert-dismissible" role="alert">
@@ -20,7 +17,6 @@
                     {{Session::get('message-error')}}
                   </div>
                 @endif
-
                     <div class="tab-content">
                          <h1>Crear Deudor</h1>
                       <form method="POST" action="http://localhost/practica/public/guardar" accept-charset="UTF-8" enctype="multipart/form-data">
@@ -49,11 +45,9 @@
                               <label for="edad">Edad:</label>
                               <input type="text" name="edad" class="form-control">
                         </div>
-
                         <input type="submit" value="Guardar" class="btn btn-primary">
                       </form>
                     </div>
-
               </div>
             </div>
         </div>
